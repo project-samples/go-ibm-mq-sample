@@ -1,0 +1,1 @@
+# go-ibm-mq-sample
