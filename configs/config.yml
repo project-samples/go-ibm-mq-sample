@@ -1,0 +1,39 @@
+server:
+  name: go-subscription
+  port: 8080
+
+log:
+  level: info
+  map:
+    time: "@timestamp"
+    msg: message
+
+mongo:
+  uri: mongodb+srv://dbUser:Demoaccount1@projectdemo.g0lah.mongodb.net
+  database: masterdata
+
+handler:
+  key: key
+  goroutines: true
+  retry:
+    1: 5
+    2: 7
+    3: 9
+
+ibmmq:
+  mq_auth:
+    user_id: "app"
+    password: "passw0rd"
+  subscriber_config:
+    manager_name: "QM1"
+    channel_name: "DEV.APP.SVRCONN"
+    connection_name: "ibmcom_mq(1414)"
+    queue_name: "DEV.QUEUE.1"
+    topic: "DEV.BASE.TOPIC"
+    wait_interval: 0
+  queue_config:
+    put: true
+    manager_name: "QM1"
+    channel_name: "DEV.APP.SVRCONN"
+    connection_name: "ibmcom_mq(1414)"
+    queue_name: "DEV.QUEUE.1"
