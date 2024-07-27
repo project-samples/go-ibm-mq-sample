@@ -8,11 +8,11 @@ import (
 )
 
 type Config struct {
-	Server  server.ServerConf `mapstructure:"server"`
-	Log     log.Config        `mapstructure:"log"`
-	Mongo   MongoConfig       `mapstructure:"mongo"`
-	IBMMQ   IBMMQConfig       `mapstructure:"ibmmq"`
-	Handler mq.HandlerConfig  `mapstructure:"handler"`
+	Server  server.ServerConfig `mapstructure:"server"`
+	Log     log.Config          `mapstructure:"log"`
+	Mongo   MongoConfig         `mapstructure:"mongo"`
+	IBMMQ   IBMMQConfig         `mapstructure:"ibmmq"`
+	Handler mq.HandlerConfig    `mapstructure:"handler"`
 }
 
 type MongoConfig struct {
