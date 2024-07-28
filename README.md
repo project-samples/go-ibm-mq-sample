@@ -11,4 +11,4 @@ The sample about rabbit-mq, which use these libraries:
 
 ### Similar libraries for nodejs
 We also provide these libraries to support nodejs:
-- [IBM MQ](https://github.com/core-ts/ibmmq), combine with [mq-one](https://www.npmjs.com/package/mq-one) for nodejs. Example is at [ibmmq-sample](https://github.com/typescript-tutorial/ibmmq-sample)
+- [ibmmq-plus](https://www.npmjs.com/package/ibmmq-plus), to wrap and simplify [ibmmq](https://www.npmjs.com/package/ibmmq), combine with [mq-one](https://www.npmjs.com/package/mq-one) for nodejs. Example is at [ibmmq-sample](https://github.com/typescript-tutorial/ibmmq-sample)
